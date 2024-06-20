@@ -1,0 +1,38 @@
+.article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .article:hover {
+    transform: translateY(-10px);
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .article h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .article p {
+    font-size: 0.9em;
+    color: #ffffff;
+  }
+  
+  .article a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .article a:hover {
+    text-decoration: underline;
+  }
+  

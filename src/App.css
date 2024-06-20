@@ -1,0 +1,159 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-image: url('./pages/background.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+
+  background-repeat: repeat-y; /* Prevent image from repeating */
+  height: 100vh; /* Set full viewport height */
+  font-family: Arial, sans-serif; /* Example: Set a default font-family */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto; 
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+  position: relative; /* Ensure child elements are positioned relative to this */
+  z-index: 1; /* Ensure content appears above background */
+  background-color: rgba(255, 255, 255, 0.8); /* Example: Semi-transparent white background for clarity */
+  padding: 20px; /* Example: Add padding to content */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Homepage styles */
+.homepage {
+  padding: 20px;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.article:hover {
+  transform: translateY(-10px);
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.article h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.article p {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.article a {
+  text-decoration: none;
+  color: #01172f;
+  font-weight: bold;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+/* Detailed article view styles */
+.article-detail {
+  padding: 20px;
+}
+
+.article-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Category filter styles */
+.category-filter {
+  margin-bottom: 20px;
+}
+
+.category-filter select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Pagination styles */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .article-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-filter select {
+    width: 100%;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .pagination button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

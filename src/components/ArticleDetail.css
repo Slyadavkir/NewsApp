@@ -1,0 +1,44 @@
+/* ArticleDetail.css */
+
+.article-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .article-detail h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .article-detail img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+  .article-detail p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .article-detail {
+      padding: 10px;
+    }
+    
+    .article-detail h1 {
+      font-size: 1.5rem;
+    }
+    
+    .article-detail p {
+      font-size: 1rem;
+    }
+  }
+  
